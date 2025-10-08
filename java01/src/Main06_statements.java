@@ -27,6 +27,14 @@ public class Main06_statements {
             System.out.println("Hello, " + name);
         }
 
+        // ternary - taip pat
+
+        String noname = name.isEmpty() ? "You didn't enter your name" : name;
+        System.out.println(noname);
+
+        String check = age >= 18 ? "Pass" : "Get out!";
+        System.out.println(check);
+
         scanner.close();
 
     }
