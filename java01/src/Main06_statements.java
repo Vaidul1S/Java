@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main06_statements {
     public static void main(String[] args){
 
-        // && || ! - all same
+        // && || != - all same, but == (there is no ===)
 
         Scanner scanner = new Scanner(System.in);
 
@@ -15,10 +15,12 @@ public class Main06_statements {
         System.out.print("Enter your age: ");
         age = scanner.nextInt();
 
-        if (age >= 18) {
+        if (age >= 18 && age <= 65) {
             System.out.println("You may enter.");
         } else if (age < 0) {
             System.out.println("You might be dead on not born yet!");
+        } else if (age > 65) {
+            System.out.println("Consult your doctor first.");
         } else {
             System.out.println("You must be an adult to enter!");
         }
