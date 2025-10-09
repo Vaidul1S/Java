@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class Main06_statements {
     public static void main(String[] args){
 
+        // && || ! - all same
+
         Scanner scanner = new Scanner(System.in);
 
         String name;
