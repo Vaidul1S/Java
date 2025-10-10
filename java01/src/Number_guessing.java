@@ -14,7 +14,7 @@ public class Number_guessing {
         int randomNumber = random.nextInt(min, max + 1);
 
         System.out.println("Welcome to the number guessing game!");
-        System.out.print("Guess a number between 1 and 100: ");
+        System.out.printf("Guess a number between %d and %d: ", min, max);
 
         do{
             System.out.print("Enter a guess: ");
