@@ -4,8 +4,6 @@ public class Main14_for_loop {
     public static void main(String[] args) throws InterruptedException {
         Scanner scanner = new Scanner(System.in);
 
-        String name = "";
-
         for(int i = 0; i < 5; i++){
             System.out.printf("%d. Pizza ", i + 1);
             System.out.println(" ");
