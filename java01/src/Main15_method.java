@@ -15,6 +15,14 @@ public class Main15_method {
         double num1 = scanner.nextDouble();
         System.out.println(square(num1));
 
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+
+        if(ageCheck(age)){
+            System.out.println("You may enter.");
+        } else {
+            System.out.println("Freak off!");
+        }
 
 
         scanner.close();
@@ -25,5 +33,13 @@ public class Main15_method {
 
     static double square(double number){
         return number * number;
+    }
+
+    static boolean ageCheck(int age){
+        if(age >= 18){
+            return true;
+        } else {
+            return false;
+        }
     }
 }
