@@ -15,6 +15,26 @@ public class Main16_overloaded_method {
         String pizza2 = makeApizza("thin bread", "mozzarella");
         System.out.println(pizza2);
 
+        String pizza3 = makeApizza("thin bread", "mozzarella", "ham");
+        System.out.println(pizza3);
+
+        String topping;
+        String cheese;
+        String bread;
+
+        System.out.println("Enter a topping: ");
+        topping = scanner.nextLine();
+
+        System.out.println("Enter a cheese: ");
+        cheese = scanner.nextLine();
+
+        System.out.println("Enter a bread: ");
+        bread = scanner.nextLine();
+
+        String pizza4 = makeApizza(bread, cheese, topping);
+        System.out.println(pizza4);
+
+
         scanner.close();
     }
     static double add(double a, double b){
@@ -28,6 +48,9 @@ public class Main16_overloaded_method {
     }
     static String makeApizza(String bread, String cheese){
         return cheese + " " + bread + " pizza";
+    }
+    static String makeApizza(String bread, String cheese, String topping){
+        return topping + " " + cheese + " " + bread + " pizza";
     }
 
 
