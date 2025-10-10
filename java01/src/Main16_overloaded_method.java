@@ -1,8 +1,17 @@
 import java.util.Scanner;
 
 public class Main16_overloaded_method {
+
+    static int x = 5; // CLASS variable
+
     public static void main(String[] args) {
         // same name, different params = signature
+
+        //int x = 7; // LOCAL variable
+
+        System.out.println(x);
+        System.out.println(x);
+        variable();
 
         Scanner scanner = new Scanner(System.in);
 
@@ -37,6 +46,10 @@ public class Main16_overloaded_method {
 
         scanner.close();
     }
+    static void variable(){
+        int x = 8; //LOCAL
+        System.out.println(x);
+    }
     static double add(double a, double b){
         return a + b;
     }
@@ -52,6 +65,7 @@ public class Main16_overloaded_method {
     static String makeApizza(String bread, String cheese, String topping){
         return topping + " " + cheese + " " + bread + " pizza";
     }
+
 
 
 }
