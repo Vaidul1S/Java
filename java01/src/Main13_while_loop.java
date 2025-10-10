@@ -13,6 +13,16 @@ public class Main13_while_loop {
 
         System.out.println("Hello, " + name);
 
+        String entry = "";
+
+        do {
+            System.out.println("You are playing a game!");
+            System.out.println("Enter 'Q' to quit!");
+            entry = scanner.nextLine().toUpperCase();
+        } while (!entry.equals("Q"));
+
+        System.out.printf("Thanks for playing, %s!", name);
+
         scanner.close();
     }
 }
