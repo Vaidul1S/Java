@@ -4,29 +4,40 @@ public class Banking {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
 
-        double principal;
-        double rate;
-        int timeCompound;
-        int years;
+        double balance = 1000.90;
+        boolean isRunning = true;
+        int choice;
         double amount;
+        while (isRunning) {
 
-        System.out.print("Enter principle amount: ");
-        principal = scanner.nextDouble();
+            System.out.println("***************");
+            System.out.println("Banking Program");
+            System.out.println("1. Show Balance");
+            System.out.println("2. Deposit");
+            System.out.println("3. Withdraw");
+            System.out.println("4. Exit");
+            System.out.println("***************");
+            System.out.print("Enter your choice (1-4): ");
+            choice = scanner.nextInt();
 
-        System.out.print("Enter the interest rate (in %): ");
-        rate = scanner.nextDouble()/100;
+            switch (choice) {
+                case 1 -> System.out.println("Show balance");
+                case 2 -> System.out.println("Deposite");
+                case 3 -> System.out.println("Withdraw");
+                case 4 -> System.out.println("Exit");
+                default -> System.out.println("Invalid choice!");
 
-        System.out.print("Enter the number of time compounded per year: ");
-        timeCompound = scanner.nextInt();
-
-        System.out.print("Enter the number of years: ");
-        years = scanner.nextInt();
-
-        amount = principal * Math.pow(1 + rate/timeCompound, timeCompound * years);
-
-        System.out.printf("The amount after %d years is %,.2f €", years, amount);
+            }
+        }
+        showBalance(balance);
+        deposite();
+        withdraw();
+        exit();
 
 
         scanner.close();
+    }
+    static void showBalance(double balance){
+        System.out.printf("\n€ %.2f\n", balance);
     }
 }
