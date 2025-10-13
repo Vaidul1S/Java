@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class Dice {
+public class Dice_rolling {
 
     static Scanner scanner = new Scanner(System.in);
 
