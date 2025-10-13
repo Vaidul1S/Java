@@ -1,13 +1,14 @@
 import java.util.Scanner;
 
 public class Banking {
+
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
 
         double balance = 1000.90;
         boolean isRunning = true;
         int choice;
-        double amount;
         while (isRunning) {
 
             System.out.println("***************");
@@ -21,23 +22,47 @@ public class Banking {
             choice = scanner.nextInt();
 
             switch (choice) {
-                case 1 -> System.out.println("Show balance");
-                case 2 -> System.out.println("Deposite");
-                case 3 -> System.out.println("Withdraw");
-                case 4 -> System.out.println("Exit");
+                case 1 -> showBalance(balance);
+                case 2 -> balance += deposit();
+                case 3 -> balance -= withdraw(balance);
+                case 4 -> isRunning = false;
                 default -> System.out.println("Invalid choice!");
 
             }
         }
-        showBalance(balance);
-        deposite();
-        withdraw();
-        exit();
 
 
         scanner.close();
     }
     static void showBalance(double balance){
-        System.out.printf("\n€ %.2f\n", balance);
+        System.out.printf("\n€ %.2f\n\n", balance);
     }
+
+    static  double deposit(){
+        double amount;
+        System.out.print("Enter an amount to be deposited: ");
+        amount = scanner.nextDouble();
+        if (amount <= 0){
+            System.out.println("Invalid amount!");
+            return 0;
+        } else {
+            return amount;
+        }
+    }
+
+    static double withdraw(double balance){
+        double amount;
+        System.out.print("Enter an amount to be withdrawn: ");
+        amount = scanner.nextDouble();
+
+        if (amount > balance){
+            System.out.println("Insufficient funds.");
+        } else if (amount < 0){
+            System.out.println("Amount can't be negative.");
+        } else {
+            return amount;
+        }
+        return 0;
+    }
+
 }
