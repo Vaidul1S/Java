@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Banking {
+public class ATM {
 
     static Scanner scanner = new Scanner(System.in);
 
