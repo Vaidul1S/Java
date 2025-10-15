@@ -5,7 +5,7 @@ public class Quiz {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Welcome to the quiz!");
+        System.out.println("\nWelcome to the Quiz Game!\n");
 
         String[] questions = {"1. What does CPU stand for?",
                               "2. Which of the following is an example of computer memory?",
@@ -29,9 +29,22 @@ public class Quiz {
         int score = 0;
         int guess;
 
-        
+        for (int i = 0; i < questions.length; i++) {
+            System.out.println(questions[i]);
+            for(String option : options[i]){
+                System.out.println("\t" + option);
+            }
+            System.out.print("Enter your guess: ");
+            guess = scanner.nextInt();
+            if (guess == correctAnswers[i]){
+                System.out.println("\nCorrect!\n");
+                score++;
+            } else {
+                System.out.println("\nWrong!\n");
+            }
+        }
 
-
+        System.out.println("Your final score is: " + score + " out of " + questions.length + ".");
 
         scanner.close();
     }
