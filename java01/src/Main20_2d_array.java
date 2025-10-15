@@ -39,7 +39,7 @@ public class Main20_2d_array {
             System.out.println();
         }
 
-        
+
     }
 
 
