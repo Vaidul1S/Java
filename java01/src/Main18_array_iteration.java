@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main18_ {
+public class Main18_array_iteration {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
