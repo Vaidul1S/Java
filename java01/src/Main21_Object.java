@@ -29,10 +29,14 @@ public class Main21_Object {
         System.out.println(person1.name);
         System.out.println(person1.age);
         System.out.println(person1.height);
+        System.out.println(person1.isCelebrity);
+        person1.sing();
 
         System.out.println(person2.name);
         System.out.println(person2.age);
         System.out.println(person2.height);
+        System.out.println(person2.isCelebrity);
+        person2.sing();
 
 
         scanner.close();

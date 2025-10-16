@@ -9,5 +9,10 @@ public class Person {
         this.name = name;
         this.age = age;
         this.height = height;
+        this.isCelebrity = true;
+    }
+
+    void sing(){
+        System.out.println(name + " is singing.");
     }
 }
