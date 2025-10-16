@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class Main21_Object {
+
+    public static void main(String[] args) {
+
+        // Object = an entity that holds data (attributes)
+
+        Scanner scanner = new Scanner(System.in);
+
+        Car car = new Car();
+
+        System.out.println(car.make);
+        System.out.println(car.model);
+        System.out.println(car.year);
+        System.out.println(car.price);
+
+        car.start();
+        System.out.println(car.isWorking);
+
+        car.stop();
+        System.out.println(car.isWorking);
+
+        car.drive();
+
+        Person person1 = new Person("Ella", 17, 156.5);
+        Person person2 = new Person("Ga Won", 23, 171.3);
+
+        System.out.println(person1.name);
+        System.out.println(person1.age);
+        System.out.println(person1.height);
+
+        System.out.println(person2.name);
+        System.out.println(person2.age);
+        System.out.println(person2.height);
+
+
+        scanner.close();
+
+
+    }
+
+
+
+}
