@@ -20,6 +20,7 @@ public class Slot_Machine {
            System.out.println("Current balance: € " + balance);
            System.out.print("Place your bet: ");
            bet = scanner.nextDouble();
+           scanner.nextLine();
 
            if (bet > balance){
                System.out.println("Insufficient funds!");
@@ -40,7 +41,14 @@ public class Slot_Machine {
                System.out.println("You won € " + payout);
                balance += payout;
            } else {
-               System.out.println("Sorry, try again");
+               System.out.println("\nSorry, try again");
+           }
+
+           System.out.println("Do you want to play again? (yes/no)");
+           playAgain = scanner.nextLine().toLowerCase();
+
+           if(!playAgain.equals("yes")){
+               break;
            }
 
        }
