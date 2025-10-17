@@ -1,8 +1,8 @@
 public class Car {
-    String make = "Audi";
-    String model = "A8";
+    String make = "Lamborghini";
+    String model = "Murcielago";
     int year = 2025;
-    double price = 60300.99;
+    double price = 460300.99;
     boolean isWorking = false;
 
     void start(){
