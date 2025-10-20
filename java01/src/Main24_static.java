@@ -4,7 +4,7 @@ public class Main24_static {
 
     public static void main(String[] args) {
 
-        // stattic - Makes a variable or method belong to class
+        // static - Makes a variable or method belong to class
         Scanner scanner = new Scanner(System.in);
 
         Friend friend1 = new Friend("Peter");
