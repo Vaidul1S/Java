@@ -9,4 +9,7 @@ public class Animal {
     void eat(){
         System.out.println("The animal is eating.");
     }
+    void moves(){
+        System.out.println("The animal is running.");
+    }
 }
