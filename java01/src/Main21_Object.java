@@ -8,7 +8,7 @@ public class Main21_Object {
 
         Scanner scanner = new Scanner(System.in);
 
-        Car car = new Car();
+        Car car = new Car("Lamborghini", "Murcielago", 2025, 460300.99);
 
         System.out.println(car.make);
         System.out.println(car.model);

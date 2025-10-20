@@ -5,6 +5,17 @@ public class Car {
     double price = 460300.99;
     boolean isWorking = false;
 
+    Car(String make, String model, int year, double price){
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.price = price;
+    }
+    @Override
+    public String toString(){
+        return this.make + " " + this.model + " " + this.year + " " + this.price + " €";
+    }
+
     void start(){
         isWorking = true;
         System.out.println("You start the engine.");
