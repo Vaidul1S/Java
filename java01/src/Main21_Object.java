@@ -10,10 +10,10 @@ public class Main21_Object {
 
         Car car = new Car("Lamborghini", "Murcielago", 2025, 460300.99);
 
-        System.out.println(car.make);
-        System.out.println(car.model);
-        System.out.println(car.year);
-        System.out.println(car.price);
+        System.out.println(car.getBrand());
+        System.out.println(car.getModel());
+        System.out.println(car.getYear());
+        System.out.println(car.getPrice());
 
         car.start();
         System.out.println(car.isWorking);

@@ -1,19 +1,19 @@
 public class Car extends Vehicle {
-    String make = "Lamborghini";
-    String model = "Murcielago";
-    int year = 2025;
-    double price = 460300.99;
+    private final String brand;
+    private final String model;
+    private int year;
+    private double price;
     boolean isWorking = false;
 
-    Car(String make, String model, int year, double price){
-        this.make = make;
+    Car(String brand, String model, int year, double price){
+        this.brand = brand;
         this.model = model;
         this.year = year;
         this.price = price;
     }
     @Override
     public String toString(){
-        return this.make + " " + this.model + " " + this.year + " " + this.price + " €";
+        return this.brand + " " + this.model + " " + this.year + " " + this.price + " €";
     }
 
     void start(){
@@ -32,6 +32,34 @@ public class Car extends Vehicle {
     @Override
     void go(){
         System.out.println("You drive the car.");
+    }
+
+    String getBrand(){
+        return this.brand;
+    }
+
+    String getModel(){
+        return this.model;
+    }
+
+    int getYear(){
+        return this.year;
+    }
+
+    double getPrice(){
+        return this.price;
+    }
+
+    void setYear(int year){
+        this.year = year;
+    }
+
+    void setPrice(double price){
+        if(price < 0){
+            System.out.println("Price can't be less than zero.");
+        } else {
+            this.price = price;
+        }
     }
 
 }
