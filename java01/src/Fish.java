@@ -6,6 +6,11 @@ public class Fish extends Animal implements Predator, Prey{
     }
 
     @Override
+    void speak(){
+        System.out.println("The Fish goes bubbles.");
+    }
+
+    @Override
     public void flee(){
         System.out.println("The Fish is running away.");
     };
