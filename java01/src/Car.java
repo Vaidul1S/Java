@@ -1,4 +1,4 @@
-public class Car {
+public class Car extends Vehicle {
     String make = "Lamborghini";
     String model = "Murcielago";
     int year = 2025;
@@ -27,6 +27,11 @@ public class Car {
     void drive(){
         isWorking = true;
         System.out.printf("You took %s for a spin.\n", model);
+    }
+
+    @Override
+    void go(){
+        System.out.println("You drive the car.");
     }
 
 }
