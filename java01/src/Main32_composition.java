@@ -15,6 +15,7 @@ public class Main32_composition {
         System.out.println(rocket1.year);
         System.out.println(rocket1.engine.brand);
 
+        rocket1.start();
 
         scanner.close();
 
