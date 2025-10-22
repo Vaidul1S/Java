@@ -9,8 +9,11 @@ public class Main32_composition {
 
         Scanner scanner = new Scanner(System.in);
 
-        
+        Rocket rocket1 = new Rocket("Saturn 5", 1960, "F1");
 
+        System.out.println(rocket1.model);
+        System.out.println(rocket1.year);
+        System.out.println(rocket1.engine.brand);
 
 
         scanner.close();
