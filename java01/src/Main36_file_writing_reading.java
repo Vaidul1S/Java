@@ -47,12 +47,34 @@ public class Main36_file_writing_reading {
             System.out.println("Something went wrong.");
         }
 
+        // audio file
+
         String filePathAudio = "src\\sample.wav";
         File file = new File(filePathAudio);
 
         try (AudioInputStream audioStream = AudioSystem.getAudioInputStream(file);) {
             Clip clip = AudioSystem.getClip();
             clip.open(audioStream);
+
+            String respone = "";
+            while (!respone.equals("Q")){
+                System.out.println("P = Play");
+                System.out.println("S = Stop");
+                System.out.println("R = Reset");
+                System.out.println("Q = Quit");
+                System.out.print("Enter you choice: ");
+
+                respone = scanner.next().toUpperCase();
+
+                switch (respone){
+                    case "P" -> clip.start();
+                    case "S" -> clip.stop();
+                    case "R" -> clip.setMicrosecondPosition(0);
+                    case "Q" -> clip.close();
+                    default -> System.out.println("Invalid choice!");
+                }
+            }
+
             System.out.println("All good.");
         }
         catch (FileNotFoundException e){
@@ -66,6 +88,9 @@ public class Main36_file_writing_reading {
         }
         catch (IOException e) {
             System.out.println("Shit just hit a fan.");
+        }
+        finally {
+            System.out.println("Bye bye.");
         }
 
 
