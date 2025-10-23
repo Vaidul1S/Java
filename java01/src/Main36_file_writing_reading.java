@@ -1,6 +1,4 @@
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 public class Main36_file_writing_reading {
@@ -31,11 +29,22 @@ public class Main36_file_writing_reading {
 
         // How to read a file using java
 
-        // BufferedReader - for text files line by line
+        // BufferedReader + FileReader - for text files line by line
         // FileInputStream - for binary
         // RandomAccessFile - for read/write specific portion of a large file
+        // There is more too
 
-        
+        try(BufferedReader reader = new BufferedReader(new FileReader(filePath))){
+            System.out.println("File found.");
+            String line;
+            while ((line = reader.readLine()) !=null){
+                System.out.println(line);
+            }
+        } catch (FileNotFoundException e){
+            System.out.println("Could not locate file.");
+        } catch (IOException e){
+            System.out.println("Something went wrong.");
+        }
 
 
 
