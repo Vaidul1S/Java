@@ -1,4 +1,9 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Hangman_Game {
@@ -7,11 +12,28 @@ public class Hangman_Game {
 
         // Java Hangman Game
 
+        String filePath = "src\\words.txt";
+        ArrayList<String> words = new ArrayList<>();
+
+        try(BufferedReader reader = new BufferedReader(new FileReader(filePath))){
+            String line;
+            while ((line = reader.readLine()) != null){
+                words.add(line.trim());
+            }
+        }
+        catch (FileNotFoundException e){
+            System.out.println("File not found.");
+        }
+        catch (IOException e){
+            System.out.println("Shit just hit a fan.");
+        }
+
+        Random random = new Random();
+        String word = words.get(random.nextInt(words.size()));
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("\nWelcome to Java Hangman Game\n");
-
-        String word = "pizza";
 
         ArrayList<Character> wordState = new ArrayList<>();
         int wrongGuesses = 0;
