@@ -33,8 +33,15 @@ public class Main37_date_time {
         System.out.println(dateTime1);
         System.out.println(dateTime2);
 
-
-
+        if(dateTime1.isBefore(dateTime2)){
+            System.out.println(dateTime1 + " is earlier than " + dateTime2);
+        }
+        else if (dateTime1.isAfter(dateTime2)) {
+            System.out.println(dateTime1 + " is latter than " + dateTime2);
+        }
+        else if (dateTime1.isEqual(dateTime2)) {
+            System.out.println(dateTime1 + " is equal to " + dateTime2);
+        }
 
 
         scanner.close();
