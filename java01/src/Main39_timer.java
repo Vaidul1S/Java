@@ -27,7 +27,25 @@ public class Main39_timer {
             }
         };
 
-        timer.schedule(task, 1000, 1000);
+        // timer.schedule(task, 0, 500);       // task, delay, period
+
+        System.out.print("Enter number to count from: ");
+        int response = scanner.nextInt();
+
+        TimerTask newYear = new TimerTask() {
+            int countdown = response;
+            @Override
+            public void run() {
+                System.out.println(countdown);
+                countdown--;
+                if(countdown < 0){
+                    System.out.println("Happy new year!!!🎊");
+                    timer.cancel();
+                }
+            }
+        };
+
+        timer.schedule(newYear, 0, 1000);
 
 
         scanner.close();
