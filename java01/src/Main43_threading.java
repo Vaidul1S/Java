@@ -7,7 +7,7 @@ public class Main43_threading {
         // Threading - multiple task simultaneously
         // How to create a Thread
         // 1. Extend the Thread class (simple, limited)
-        // 2. Implement the runnable interface (better)
+        // 2. Implement the Runnable interface (better)
 
         Scanner scanner = new Scanner(System.in);
 
