@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-public class Alarmclock {
+public class AlarmClock {
 
     public static void main(String[] args) {
 
-        // Java Alarmclock
+        // Java Alarm Clock
 
         Scanner scanner = new Scanner(System.in);
 
-        
+
 
         scanner.close();
 
