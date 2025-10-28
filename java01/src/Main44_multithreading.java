@@ -28,17 +28,10 @@ public class Main44_multithreading {
             System.out.println("Fan just hit shit!");
         }
 
-
-
         System.out.println("Game over!");
-
-
 
         scanner.close();
 
-
     }
-
-
 
 }
