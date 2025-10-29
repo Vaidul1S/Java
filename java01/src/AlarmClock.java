@@ -14,6 +14,7 @@ public class AlarmClock {
         System.out.println("Welcome to Java Alarm Clock");
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
         LocalTime alarTime = null;
+        String filePath = "scr//sample.wav";
 
         while (alarTime == null){
             try{
@@ -27,6 +28,11 @@ public class AlarmClock {
                 System.out.println("Invalid time format!");
             }
         }
+
+        Alarm alarm = new Alarm(alarTime, filePath);
+        Thread alarmThread = new Thread(alarm);
+        alarmThread.start();
+
 
 
 
