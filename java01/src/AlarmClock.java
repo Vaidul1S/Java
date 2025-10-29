@@ -13,18 +13,22 @@ public class AlarmClock {
 
         System.out.println("Welcome to Java Alarm Clock");
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
-        LocalTime alarTime;
+        LocalTime alarTime = null;
 
-        try{
-            System.out.print("Enter an alarm time (HH:mm:ss): ");
-            String inputTime = scanner.nextLine();
+        while (alarTime == null){
+            try{
+                System.out.print("Enter an alarm time (HH:mm:ss): ");
+                String inputTime = scanner.nextLine();
 
-            alarTime = LocalTime.parse(inputTime, formatter);
-            System.out.println("Alarm set for " + alarTime);
+                alarTime = LocalTime.parse(inputTime, formatter);
+                System.out.println("Alarm set for " + alarTime);
+            }
+            catch (DateTimeParseException e){
+                System.out.println("Invalid time format!");
+            }
         }
-        catch (DateTimeParseException e){
-            System.out.println("Invalid time format!");
-        }
+
+
 
 
 
