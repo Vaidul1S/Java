@@ -3,15 +3,18 @@ import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalTime;
+import java.util.Scanner;
 
 public class Alarm implements Runnable{
 
     private final LocalTime alarmTime;
     private final String filePath;
+    private final Scanner scanner;
 
-    Alarm(LocalTime alarmTime, String filePath){
+    Alarm(LocalTime alarmTime, String filePath, Scanner scanner){
         this.alarmTime = alarmTime;
         this.filePath = filePath;
+        this.scanner = scanner;
     }
 
     @Override
@@ -40,7 +43,11 @@ public class Alarm implements Runnable{
             clip.open(audioStream);
             clip.start();
 
-            
+            System.out.print("Press 'Enter' to stop alarm: ");
+            scanner.nextLine();
+            clip.stop();
+
+            scanner.close();
         }
         catch (UnsupportedAudioFileException e){
             System.out.println("Format is not supported");
