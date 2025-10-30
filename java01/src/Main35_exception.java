@@ -12,9 +12,9 @@ public class Main35_exception {
         try{
             System.out.print("Enter a number: ");
             int numb = scanner.nextInt();
-            System.out.println(numb);
+            System.out.println(1 / numb);
         } catch (ArithmeticException e){
-            System.out.println("You can't divide by zero here.");
+            System.out.println("You can't divide by zero here.");           // galioja tik su int, su double gaunam begalybe
         } catch (InputMismatchException e){
             System.out.println("That was NOT a number!");
         } catch (Exception e) {
@@ -24,13 +24,9 @@ public class Main35_exception {
             System.out.println("We done here.");
         }
 
-
-
         scanner.close();
 
-
     }
-
 
 
 }

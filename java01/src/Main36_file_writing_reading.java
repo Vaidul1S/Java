@@ -93,14 +93,8 @@ public class Main36_file_writing_reading {
             System.out.println("Bye bye.");
         }
 
-
-
-
         scanner.close();
 
-
     }
-
-
 
 }
