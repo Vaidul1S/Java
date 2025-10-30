@@ -1,5 +1,4 @@
 import java.util.HashMap;
-import java.util.Scanner;
 
 public class Main41_HashMap {
 
@@ -8,8 +7,6 @@ public class Main41_HashMap {
         // HashMap - A data structure that stores key-value pairs, keys are unique, values - not
         // Does not maintain any order
         // <K, V> key values
-
-        Scanner scanner = new Scanner(System.in);
 
         HashMap<String, Double> map = new HashMap<>();
 
@@ -31,11 +28,6 @@ public class Main41_HashMap {
             System.out.printf("%s: € %,.2f\n", key, map.get(key));
         }
 
-        scanner.close();
-
-
     }
-
-
 
 }

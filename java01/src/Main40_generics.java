@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Main40_generics {
 
@@ -8,8 +7,6 @@ public class Main40_generics {
         // Generics - a concept where you can write a class, interface, or method that is compatible with different data types
         // ArrayList is a generic, <T> T - type
         // <T, U> U - type tik kad alfabetas toliau butu V ir tt.
-
-        Scanner scanner = new Scanner(System.in);
 
         ArrayList<String> fruits = new ArrayList<>();
 
@@ -30,8 +27,6 @@ public class Main40_generics {
         Product<String, Double> product2 = new Product<>("orange", 0.99);
         System.out.println(product2.getItem());
         System.out.println(product2.getPrice() + " €");
-
-        scanner.close();
 
 
     }
