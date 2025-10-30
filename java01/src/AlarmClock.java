@@ -33,7 +33,6 @@ public class AlarmClock {
         Thread alarmThread = new Thread(alarm);
         alarmThread.start();
 
-
     }
 
 }

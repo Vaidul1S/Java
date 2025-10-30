@@ -15,15 +15,15 @@ public class Main41_HashMap {
 
         map.put("ferrari", 450000.0);
         map.put("aston martin", 200000.0);
-        map.put("lamborgini", 350000.0);
+        map.put("lamborghini", 350000.0);
         map.put("mclaren", 750000.0);
         map.put("pagani zonda", 1000000.0);
 
-        map.remove("lamborgini");
+        map.remove("lamborghini");
 
         System.out.println(map);
         System.out.println(map.get("mclaren"));
-        System.out.println(map.containsKey("lamborgini"));
+        System.out.println(map.containsKey("lamborghini"));
         System.out.println(map.containsValue(1000000.0));
         System.out.println(map.size());
 

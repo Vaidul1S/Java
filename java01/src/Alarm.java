@@ -34,7 +34,9 @@ public class Alarm implements Runnable{
         System.out.println("\nWake up sleepy head, half of world are probably dead!");
         Toolkit.getDefaultToolkit().beep();
         playSound(filePath);
+
     }
+
     private void playSound(String filePath){
         File audioFile = new File(filePath);
 
@@ -58,6 +60,6 @@ public class Alarm implements Runnable{
         catch (IOException e){
             System.out.println("Error reading audio file");
         }
-
     }
+
 }
