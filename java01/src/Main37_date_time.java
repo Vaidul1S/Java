@@ -2,15 +2,12 @@ import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Scanner;
 
 public class Main37_date_time {
 
     public static void main(String[] args) {
 
         // Date and time
-
-        Scanner scanner = new Scanner(System.in);
 
         LocalDate date = LocalDate.now();
         System.out.println(date);
@@ -44,11 +41,7 @@ public class Main37_date_time {
         }
 
 
-        scanner.close();
-
-
     }
-
 
 
 }
