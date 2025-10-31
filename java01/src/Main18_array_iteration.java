@@ -3,6 +3,9 @@ import java.util.Scanner;
 public class Main18_array_iteration {
 
     public static void main(String[] args) {
+
+        // Array Iteration - simple for loops
+
         Scanner scanner = new Scanner(System.in);
 
         int[] numbers = {5, 72, 6, 8, 7, 98, 9, 31};

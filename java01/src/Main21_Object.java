@@ -1,14 +1,10 @@
-import java.util.Scanner;
-
 public class Main21_Object {
 
     public static void main(String[] args) {
 
         // Object = an entity that holds data (attributes)
 
-        Scanner scanner = new Scanner(System.in);
-
-        Car car = new Car("Lamborghini", "Murcielago", 2025, 460300.99);
+        Car car = new Car("Lamborghini", "Ursus", 2025, 460300.99);
 
         System.out.println(car.getBrand());
         System.out.println(car.getModel());
@@ -37,9 +33,6 @@ public class Main21_Object {
         System.out.println(person2.height);
         System.out.println(person2.isCelebrity);
         person2.sing();
-
-
-        scanner.close();
 
 
     }

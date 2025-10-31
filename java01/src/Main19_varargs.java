@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Main19_varargs {
 
     public static void main(String[] args) {
@@ -7,14 +5,12 @@ public class Main19_varargs {
         // varargs - allow a method to accept a varying number of arguments
         // no need to overloaded methods!
 
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.println(add(1,2,3,4,5,6,7));
-        System.out.println(average(1,2,3,4,5,6,7));
-        System.out.println(average());
+        System.out.println(add(1, 2, 3, 4, 5, 6, 7));
+        System.out.println(average(1, 2, 3, 4, 5, 6, 7));
+        System.out.println(average(59, 6516, 666, 2));
 
 
-        scanner.close();
     }
 
     static int add(int... numbers){
@@ -32,8 +28,8 @@ public class Main19_varargs {
         for (double number:numbers){
             sum += number;
         }
-        double average = sum / numbers.length;
-        return average;
+
+        return sum / numbers.length;
     }
 
 }
