@@ -1,13 +1,8 @@
-import java.util.Scanner;
-
 public class Main22_overloaded_constructor {
 
     public static void main(String[] args) {
 
         // Object = an entity that holds data (attributes)
-
-        Scanner scanner = new Scanner(System.in);
-
         // allow class to have multiple constructors wih different params
 
         User user1 = new User("Sooin");
@@ -30,8 +25,6 @@ public class Main22_overloaded_constructor {
         System.out.println(user4.email);
         System.out.println(user4.age);
 
-
-        scanner.close();
 
 
     }

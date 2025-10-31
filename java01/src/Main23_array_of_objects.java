@@ -1,10 +1,6 @@
-import java.util.Scanner;
-
 public class Main23_array_of_objects {
 
     public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);
 
         Game game1 = new Game("Far Cry 9", "Ubisoft");
         Game game2 = new Game("Red Alert 5", "Westwood studios");
@@ -23,8 +19,6 @@ public class Main23_array_of_objects {
         for (Game game : games2) {
             game.release();
         }
-
-        scanner.close();
 
 
     }

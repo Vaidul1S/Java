@@ -1,11 +1,9 @@
-import java.util.Scanner;
-
 public class Main24_static {
 
     public static void main(String[] args) {
 
         // static - Makes a variable or method belong to class
-        Scanner scanner = new Scanner(System.in);
+
 
         Friend friend1 = new Friend("Peter");
         Friend friend2 = new Friend("Quagmire");
@@ -17,8 +15,6 @@ public class Main24_static {
 
 
         Math.round(5.99);           // static method for example
-
-        scanner.close();
 
 
     }
