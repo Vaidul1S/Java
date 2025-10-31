@@ -1,12 +1,8 @@
-import java.util.Scanner;
-
 public class Main25_inheritance {
 
     public static void main(String[] args) {
 
         // parent -> child, kaip C# class child extends parent
-
-        Scanner scanner = new Scanner(System.in);
 
         Dog gucci = new Dog();
         Cat puga = new Cat();
@@ -24,8 +20,6 @@ public class Main25_inheritance {
 
         Streamer streamer = new Streamer("Emi", 27, 159, 40000);
         streamer.showViewers();
-
-        scanner.close();
 
 
     }

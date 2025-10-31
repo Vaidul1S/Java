@@ -1,12 +1,9 @@
-import java.util.Scanner;
-
 public class Main26_method_overriding {
 
     public static void main(String[] args) {
 
         // method overriding
 
-        Scanner scanner = new Scanner(System.in);
 
         Dog dog = new Dog();
         Cat cat = new Cat();
@@ -20,8 +17,6 @@ public class Main26_method_overriding {
         System.out.println(car1);
         Car car2 = new Car("Chevrolet", "Corvette", 2022, 50000);
         System.out.println(car2);
-
-        scanner.close();
 
 
     }
