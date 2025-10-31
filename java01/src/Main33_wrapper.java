@@ -1,13 +1,9 @@
-import java.util.Scanner;
-
 public class Main33_wrapper {
 
     public static void main(String[] args) {
 
         // Wrapper classes - allow primitive values to be used as objects.
         // Char, int, double, boolean are wrappers
-
-        Scanner scanner = new Scanner(System.in);
 
         // Integer a = new Integer(123);
         // Double b = new Double(3.14);
@@ -47,11 +43,8 @@ public class Main33_wrapper {
         System.out.println(Character.isLetter(letter));
         System.out.println(Character.isUpperCase(letter));
 
-        scanner.close();
-
 
     }
-
 
 
 }

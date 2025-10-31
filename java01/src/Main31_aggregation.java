@@ -1,12 +1,8 @@
-import java.util.Scanner;
-
 public class Main31_aggregation {
 
     public static void main(String[] args) {
 
-        // Aggregation = Represents a has a relationship between objects
-
-        Scanner scanner = new Scanner(System.in);
+        // Aggregation = Represents a relationship between objects
 
         Book book1 = new Book("A Game of Thrones", 638);
         Book book2 = new Book("A Clash of Kings", 756);
@@ -21,10 +17,6 @@ public class Main31_aggregation {
         Library library = new Library("National", 1650, books);
 
         library.displayInfo();
-
-
-
-        scanner.close();
 
 
     }
