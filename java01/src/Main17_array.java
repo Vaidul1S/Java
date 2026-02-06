@@ -6,7 +6,7 @@ public class Main17_array {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String[] fruits = {"Apple", "Greatfruit", "Orange", "Lime", "Pear"};
+        String[] fruits = {"Apple", "Grapefruit", "Orange", "Lime", "Pear"};
 
         int numbOfFruits = fruits.length;
         System.out.println(numbOfFruits);

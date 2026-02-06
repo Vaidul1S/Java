@@ -17,7 +17,7 @@ public class Main40_generics {
 
         Box<String> box = new Box<>();
 
-        box.setItem("greatfruit");
+        box.setItem("grapefruit");
         System.out.println(box.getItem());
 
         Product<String, Double> product1 = new Product<>("banana", 1.49);

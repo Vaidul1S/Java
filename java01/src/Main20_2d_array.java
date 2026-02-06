@@ -2,12 +2,12 @@ public class Main20_2d_array {
 
     public static void main(String[] args) {
 
-        String[] fruits = {"Apple", "Greatfruit", "Orange", "Lime", "Pear", "Banana"};
+        String[] fruits = {"Apple", "Grapefruit", "Orange", "Lime", "Pear", "Banana"};
         String[] vegetables = {"Potato", "Onion", "Carrot"};
         String[] meats = {"Chicken", "Beef", "Pork", "Lamb"};
 
         String[][] groceries1 = {fruits, vegetables, meats};
-        String[][] groceries2 = {{"Apple", "Greatfruit", "Orange", "Lime", "Pear", "Banana"},
+        String[][] groceries2 = {{"Apple", "Grapefruit", "Orange", "Lime", "Pear", "Banana"},
                                 {"Potato", "Onion", "Carrot"},
                                 {"Chicken", "Beef", "Pork", "Lamb"}};
 
